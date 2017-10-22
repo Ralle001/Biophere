@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC127E351F9C6544000740A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E341F9C6544000740A9 /* AppDelegate.swift */; };
+		DC127E371F9C6544000740A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E361F9C6544000740A9 /* ViewController.swift */; };
+		DC127E3A1F9C6544000740A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC127E381F9C6544000740A9 /* Main.storyboard */; };
+		DC127E3C1F9C6544000740A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC127E3B1F9C6544000740A9 /* Assets.xcassets */; };
+		DC127E3F1F9C6544000740A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC127E3D1F9C6544000740A9 /* LaunchScreen.storyboard */; };
+		DC127E4A1F9C6544000740A9 /* BiophereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E491F9C6544000740A9 /* BiophereTests.swift */; };
+		DC127E551F9C6544000740A9 /* BiophereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E541F9C6544000740A9 /* BiophereUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC127E461F9C6544000740A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC127E291F9C6544000740A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC127E301F9C6544000740A9;
+			remoteInfo = Biophere;
+		};
+		DC127E511F9C6544000740A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC127E291F9C6544000740A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC127E301F9C6544000740A9;
+			remoteInfo = Biophere;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DC127E311F9C6544000740A9 /* Biophere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Biophere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC127E341F9C6544000740A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC127E361F9C6544000740A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DC127E391F9C6544000740A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC127E3B1F9C6544000740A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC127E3E1F9C6544000740A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC127E401F9C6544000740A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC127E451F9C6544000740A9 /* BiophereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiophereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC127E491F9C6544000740A9 /* BiophereTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiophereTests.swift; sourceTree = "<group>"; };
+		DC127E4B1F9C6544000740A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC127E501F9C6544000740A9 /* BiophereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiophereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC127E541F9C6544000740A9 /* BiophereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiophereUITests.swift; sourceTree = "<group>"; };
+		DC127E561F9C6544000740A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC127E2E1F9C6544000740A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC127E421F9C6544000740A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC127E4D1F9C6544000740A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC127E281F9C6544000740A9 = {
+			isa = PBXGroup;
+			children = (
+				DC127E331F9C6544000740A9 /* Biophere */,
+				DC127E481F9C6544000740A9 /* BiophereTests */,
+				DC127E531F9C6544000740A9 /* BiophereUITests */,
+				DC127E321F9C6544000740A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC127E321F9C6544000740A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC127E311F9C6544000740A9 /* Biophere.app */,
+				DC127E451F9C6544000740A9 /* BiophereTests.xctest */,
+				DC127E501F9C6544000740A9 /* BiophereUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC127E331F9C6544000740A9 /* Biophere */ = {
+			isa = PBXGroup;
+			children = (
+				DC127E341F9C6544000740A9 /* AppDelegate.swift */,
+				DC127E361F9C6544000740A9 /* ViewController.swift */,
+				DC127E381F9C6544000740A9 /* Main.storyboard */,
+				DC127E3B1F9C6544000740A9 /* Assets.xcassets */,
+				DC127E3D1F9C6544000740A9 /* LaunchScreen.storyboard */,
+				DC127E401F9C6544000740A9 /* Info.plist */,
+			);
+			path = Biophere;
+			sourceTree = "<group>";
+		};
+		DC127E481F9C6544000740A9 /* BiophereTests */ = {
+			isa = PBXGroup;
+			children = (
+				DC127E491F9C6544000740A9 /* BiophereTests.swift */,
+				DC127E4B1F9C6544000740A9 /* Info.plist */,
+			);
+			path = BiophereTests;
+			sourceTree = "<group>";
+		};
+		DC127E531F9C6544000740A9 /* BiophereUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DC127E541F9C6544000740A9 /* BiophereUITests.swift */,
+				DC127E561F9C6544000740A9 /* Info.plist */,
+			);
+			path = BiophereUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC127E301F9C6544000740A9 /* Biophere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC127E591F9C6544000740A9 /* Build configuration list for PBXNativeTarget "Biophere" */;
+			buildPhases = (
+				DC127E2D1F9C6544000740A9 /* Sources */,
+				DC127E2E1F9C6544000740A9 /* Frameworks */,
+				DC127E2F1F9C6544000740A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Biophere;
+			productName = Biophere;
+			productReference = DC127E311F9C6544000740A9 /* Biophere.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC127E441F9C6544000740A9 /* BiophereTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC127E5C1F9C6544000740A9 /* Build configuration list for PBXNativeTarget "BiophereTests" */;
+			buildPhases = (
+				DC127E411F9C6544000740A9 /* Sources */,
+				DC127E421F9C6544000740A9 /* Frameworks */,
+				DC127E431F9C6544000740A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC127E471F9C6544000740A9 /* PBXTargetDependency */,
+			);
+			name = BiophereTests;
+			productName = BiophereTests;
+			productReference = DC127E451F9C6544000740A9 /* BiophereTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DC127E4F1F9C6544000740A9 /* BiophereUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC127E5F1F9C6544000740A9 /* Build configuration list for PBXNativeTarget "BiophereUITests" */;
+			buildPhases = (
+				DC127E4C1F9C6544000740A9 /* Sources */,
+				DC127E4D1F9C6544000740A9 /* Frameworks */,
+				DC127E4E1F9C6544000740A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC127E521F9C6544000740A9 /* PBXTargetDependency */,
+			);
+			name = BiophereUITests;
+			productName = BiophereUITests;
+			productReference = DC127E501F9C6544000740A9 /* BiophereUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC127E291F9C6544000740A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Pliz Help";
+				TargetAttributes = {
+					DC127E301F9C6544000740A9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					DC127E441F9C6544000740A9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC127E301F9C6544000740A9;
+					};
+					DC127E4F1F9C6544000740A9 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = DC127E301F9C6544000740A9;
+					};
+				};
+			};
+			buildConfigurationList = DC127E2C1F9C6544000740A9 /* Build configuration list for PBXProject "Biophere" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC127E281F9C6544000740A9;
+			productRefGroup = DC127E321F9C6544000740A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC127E301F9C6544000740A9 /* Biophere */,
+				DC127E441F9C6544000740A9 /* BiophereTests */,
+				DC127E4F1F9C6544000740A9 /* BiophereUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC127E2F1F9C6544000740A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC127E3F1F9C6544000740A9 /* LaunchScreen.storyboard in Resources */,
+				DC127E3C1F9C6544000740A9 /* Assets.xcassets in Resources */,
+				DC127E3A1F9C6544000740A9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC127E431F9C6544000740A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC127E4E1F9C6544000740A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC127E2D1F9C6544000740A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC127E371F9C6544000740A9 /* ViewController.swift in Sources */,
+				DC127E351F9C6544000740A9 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC127E411F9C6544000740A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC127E4A1F9C6544000740A9 /* BiophereTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC127E4C1F9C6544000740A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC127E551F9C6544000740A9 /* BiophereUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC127E471F9C6544000740A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC127E301F9C6544000740A9 /* Biophere */;
+			targetProxy = DC127E461F9C6544000740A9 /* PBXContainerItemProxy */;
+		};
+		DC127E521F9C6544000740A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC127E301F9C6544000740A9 /* Biophere */;
+			targetProxy = DC127E511F9C6544000740A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC127E381F9C6544000740A9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC127E391F9C6544000740A9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC127E3D1F9C6544000740A9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC127E3E1F9C6544000740A9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC127E571F9C6544000740A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC127E581F9C6544000740A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC127E5A1F9C6544000740A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JMBH8HALZ;
+				INFOPLIST_FILE = Biophere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.Biophere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC127E5B1F9C6544000740A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JMBH8HALZ;
+				INFOPLIST_FILE = Biophere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.Biophere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DC127E5D1F9C6544000740A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JMBH8HALZ;
+				INFOPLIST_FILE = BiophereTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.BiophereTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Biophere.app/Biophere";
+			};
+			name = Debug;
+		};
+		DC127E5E1F9C6544000740A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JMBH8HALZ;
+				INFOPLIST_FILE = BiophereTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.BiophereTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Biophere.app/Biophere";
+			};
+			name = Release;
+		};
+		DC127E601F9C6544000740A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JMBH8HALZ;
+				INFOPLIST_FILE = BiophereUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.BiophereUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Biophere;
+			};
+			name = Debug;
+		};
+		DC127E611F9C6544000740A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3JMBH8HALZ;
+				INFOPLIST_FILE = BiophereUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.BiophereUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Biophere;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC127E2C1F9C6544000740A9 /* Build configuration list for PBXProject "Biophere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC127E571F9C6544000740A9 /* Debug */,
+				DC127E581F9C6544000740A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC127E591F9C6544000740A9 /* Build configuration list for PBXNativeTarget "Biophere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC127E5A1F9C6544000740A9 /* Debug */,
+				DC127E5B1F9C6544000740A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC127E5C1F9C6544000740A9 /* Build configuration list for PBXNativeTarget "BiophereTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC127E5D1F9C6544000740A9 /* Debug */,
+				DC127E5E1F9C6544000740A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC127E5F1F9C6544000740A9 /* Build configuration list for PBXNativeTarget "BiophereUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC127E601F9C6544000740A9 /* Debug */,
+				DC127E611F9C6544000740A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC127E291F9C6544000740A9 /* Project object */;
+}
