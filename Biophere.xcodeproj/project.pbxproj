@@ -14,6 +14,7 @@
 		DC127E3F1F9C6544000740A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC127E3D1F9C6544000740A9 /* LaunchScreen.storyboard */; };
 		DC127E4A1F9C6544000740A9 /* BiophereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E491F9C6544000740A9 /* BiophereTests.swift */; };
 		DC127E551F9C6544000740A9 /* BiophereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E541F9C6544000740A9 /* BiophereUITests.swift */; };
+		DC4202DF1FB05B8600C19566 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4202DE1FB05B8600C19566 /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 		DC127E501F9C6544000740A9 /* BiophereUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiophereUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC127E541F9C6544000740A9 /* BiophereUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiophereUITests.swift; sourceTree = "<group>"; };
 		DC127E561F9C6544000740A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC127E621F9C6575000740A9 /* Biophere.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Biophere.entitlements; sourceTree = "<group>"; };
+		DC4202DE1FB05B8600C19566 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +100,10 @@
 		DC127E331F9C6544000740A9 /* Biophere */ = {
 			isa = PBXGroup;
 			children = (
+				DC127E621F9C6575000740A9 /* Biophere.entitlements */,
 				DC127E341F9C6544000740A9 /* AppDelegate.swift */,
 				DC127E361F9C6544000740A9 /* ViewController.swift */,
+				DC4202DE1FB05B8600C19566 /* SettingsViewController.swift */,
 				DC127E381F9C6544000740A9 /* Main.storyboard */,
 				DC127E3B1F9C6544000740A9 /* Assets.xcassets */,
 				DC127E3D1F9C6544000740A9 /* LaunchScreen.storyboard */,
@@ -194,6 +199,14 @@
 					DC127E301F9C6544000740A9 = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 1;
+							};
+						};
 					};
 					DC127E441F9C6544000740A9 = {
 						CreatedOnToolsVersion = 9.0;
@@ -261,6 +274,7 @@
 			files = (
 				DC127E371F9C6544000740A9 /* ViewController.swift in Sources */,
 				DC127E351F9C6544000740A9 /* AppDelegate.swift in Sources */,
+				DC4202DF1FB05B8600C19566 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +377,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +428,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -426,14 +440,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Biophere/Biophere.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JMBH8HALZ;
 				INFOPLIST_FILE = Biophere/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.Biophere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,14 +457,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Biophere/Biophere.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JMBH8HALZ;
 				INFOPLIST_FILE = Biophere/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.Biophere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
