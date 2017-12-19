@@ -21,12 +21,13 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            let ViewController = segue.destination as? ViewController
+            // Ez egy rossz paradigma, erdemesebb egy kulon getterbe tenni, ha muszaj akkor inkabb igy:
+            ViewController?.waterVolume = Int(intxt.text!) ?? nil
+        }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let ViewController = segue.destination as? ViewController
-        // Ez egy rossz paradigma, erdemesebb egy kulon getterbe tenni, ha muszaj akkor inkabb igy:
-        ViewController?.waterVolume = Int(intxt.text!) ?? nil
-    }
+
     
     
     

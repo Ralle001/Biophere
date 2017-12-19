@@ -44,9 +44,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // Mivel mindkét érték nil, ezért nincs értelme ennek a két hivásnak
-        //label.text = text
         //txt = textview.text!
-        
+        label.text = String(describing: waterVolume)
         
     }
     
