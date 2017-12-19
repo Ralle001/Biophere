@@ -45,7 +45,6 @@ class ViewController: UIViewController {
         
         // Mivel mindkét érték nil, ezért nincs értelme ennek a két hivásnak
         //txt = textview.text!
-        label.text = String(describing: waterVolume)
         
     }
     
