@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textview: UITextField!
     @IBOutlet weak var conv: UILabel!
+    var convert: Int? = nil
+    var volumeText: Int? = nil
     
     // Teljsen felesleges duplán tárolni ezeket a szövegeket, az UI komponensek már tárolják
     var waterVolume: Int? = nil // Csupán az aktuális átváltott értéket érdemes tárolni, de talán még ezt sem
@@ -45,14 +47,23 @@ class ViewController: UIViewController {
         
         // Mivel mindkét érték nil, ezért nincs értelme ennek a két hivásnak
         //txt = textview.text!
-        label.text = "\(waterVolume)"
+        //label.text = "\(waterVolume)"
+        if let watervolume = waterVolume {
+            label.text = String(watervolume)
+        } else {
+            label.text = ""
+        }
     }
     
     @IBAction func saveButton(_ sender: Any) {
         // Ha az értéket csak a gomb lenyomása után szeretnénk kiszámolni akkor felesleges a fentebbi pass függvény
         if let volumeText = self.textview.text, let convertedValue = Int(volumeText) {
             self.waterVolume = convertedValue
-            self.conv.text = volumeText
+            
+            if waterVolume != nil && volumeText != nil{
+                convert = Int(waterVolume) - Int(volumeText)
+            }
+            //self.conv.text = volumeText
         }
         //        if let textint = Int(text!), let txtint = Int(txt!) {
         //            convert = String(textint - txtint)
