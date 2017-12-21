@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         
         // Mivel mindkét érték nil, ezért nincs értelme ennek a két hivásnak
         //txt = textview.text!
-        
+        label.text = "\(waterVolume)"
     }
     
     @IBAction func saveButton(_ sender: Any) {
