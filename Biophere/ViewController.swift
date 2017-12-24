@@ -60,8 +60,9 @@ class ViewController: UIViewController {
         if let volumeText = self.textview.text, let convertedValue = Int(volumeText) {
             self.waterVolume = convertedValue
             
-            //if waterVolume != nil && volumeText != nil{
-            //    convert = Int(waterVolume) - Int(volumeText)
+            if waterVolume != nil && volumeText != nil{
+               convert = Int(waterVolume) - Int(volumeText)!
+        }
             }
             //self.conv.text = volumeText
         }
