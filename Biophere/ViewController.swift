@@ -33,7 +33,10 @@ class ViewController: UIViewController {
         // Ha az értéket csak a gomb lenyomása után szeretnénk kiszámolni akkor felesleges a fentebbi pass függvény
         //A waterVolume (maximum)-ból ki szeretném vonni a textview (volumeText)-ben megadott értéket
         if let volumeText = self.textview.text, let convertedValue = Int(volumeText) {
-            self.waterVolume = convertedValue
+            if self.waterVolume != nil {
+                self.waterVolume! -= convertedValue
+                label.text = String(self.waterVolume!)
+            }
             conv.text = String(convertedValue)
         }
     }
