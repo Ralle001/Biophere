@@ -15,6 +15,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var conv: UILabel!
     var convert: Int? = nil
     var volumeText: Int? = nil
+    var context: Int? = nil
     
     // Teljsen felesleges duplán tárolni ezeket a szövegeket, az UI komponensek már tárolják
     var waterVolume: Int? = nil // Csupán az aktuális átváltott értéket érdemes tárolni, de talán még ezt sem
@@ -60,26 +61,23 @@ class ViewController: UIViewController {
         if let volumeText = self.textview.text, let convertedValue = Int(volumeText) {
             self.waterVolume = convertedValue
             
-            if waterVolume != nil && volumeText != nil{
-               convert = Int(waterVolume) - Int(volumeText)!
-        }
+            if waterVolume != nil{
+                convert = waterVolume! - Int(volumeText)!
+                if let context = convert{
+                conv.text = String(context)
+                }
             }
-            //self.conv.text = volumeText
         }
-        //        if let textint = Int(text!), let txtint = Int(txt!) {
-        //            convert = String(textint - txtint)
-        //            conv.text = convert
-        //        } else{
-        //            //handle it
-        //        }
     
     
     
-    override func didReceiveMemoryWarning() {
+        func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
     
 
+    }
 }
