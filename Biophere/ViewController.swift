@@ -13,42 +13,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textview: UITextField!
     @IBOutlet weak var conv: UILabel!
-    var convert: Int? = nil
     var volumeText: Int? = nil
-    var context: Int? = nil
     
     // Teljsen felesleges duplán tárolni ezeket a szövegeket, az UI komponensek már tárolják
     var waterVolume: Int? = nil // Csupán az aktuális átváltott értéket érdemes tárolni, de talán még ezt sem
     // mivel nagyon olcsó újraszámitani
     
-    
-    
-    @IBAction func pass(_ sender: Any) {
-        // Ez a függvény csupán egy új lokális változót deklarál, semmi köze sincs az osztály tagjaihoz,
-        // ezért simán kivehetjük őket
-        //        var txt: String {
-        //            get {
-        //                return textview.text ?? ""
-        //            }
-        //            set {
-        //                textview.text = newValue
-        //            }
-        //        }
-        //conv.text = txt
-        
-        
-    }
-    
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-        
-        // Mivel mindkét érték nil, ezért nincs értelme ennek a két hivásnak
-        //txt = textview.text!
-        //label.text = "\(waterVolume)"
+    
         if let watervolume = waterVolume {
             label.text = String(watervolume)
         } else {
@@ -60,24 +33,12 @@ class ViewController: UIViewController {
         // Ha az értéket csak a gomb lenyomása után szeretnénk kiszámolni akkor felesleges a fentebbi pass függvény
         if let volumeText = self.textview.text, let convertedValue = Int(volumeText) {
             self.waterVolume = convertedValue
-            
-            if waterVolume != nil{
-                convert = waterVolume! - Int(volumeText)!
-                if let context = convert{
-                conv.text = String(context)
-                }
-            }
+            conv.text = String(convertedValue)
         }
-    
-    
-    
-        func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-        
     }
     
-    
-
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
     }
 }
