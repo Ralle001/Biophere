@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var conv: UILabel!
     var volumeText: Int? = nil
     
+    
     // Teljsen felesleges duplán tárolni ezeket a szövegeket, az UI komponensek már tárolják
     var waterVolume: Int? = nil // Csupán az aktuális átváltott értéket érdemes tárolni, de talán még ezt sem
     // mivel nagyon olcsó újraszámitani
