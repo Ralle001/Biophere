@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var label: UILabel!
     @IBOutlet weak var textview: UITextField!
@@ -21,11 +21,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        textview.delegate = self
         if let watervolume = waterVolume {
             label.text = String(watervolume)
         } else {
             label.text = ""
         }
+        
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textview.resignFirstResponder()
+        return true
     }
     
     @IBAction func saveButton(_ sender: Any) {
@@ -37,6 +48,7 @@ class ViewController: UIViewController {
             }
             conv.text = String(self.waterVolume!)
         }
+        
     }
     
     override func didReceiveMemoryWarning() {

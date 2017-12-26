@@ -18,8 +18,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Eop-CV-UyQ">
-                                <rect key="frame" x="0.0" y="62" width="320" height="506"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic5" translatesAutoresizingMaskIntoConstraints="NO" id="Eop-CV-UyQ">
+                                <rect key="frame" x="0.0" y="18" width="320" height="506"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4b-aH-AwN">
                                 <rect key="frame" x="0.0" y="18" width="320" height="44"/>
@@ -212,6 +212,9 @@
             <point key="canvasLocation" x="1569.375" y="30.633802816901408"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="pic5" width="320" height="506"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MDP-H5-uw0"/>
     </inferredMetricsTieBreakers>
