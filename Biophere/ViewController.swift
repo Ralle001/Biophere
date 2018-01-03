@@ -13,6 +13,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textview: UITextField!
     @IBOutlet weak var conv: UILabel!
     var volumeText: Int? = nil
+    var alap: Int? = nil
+    var lab: Int? = nil
     var atlag: Int? = nil
     
     // Teljsen felesleges duplán tárolni ezeket a szövegeket, az UI komponensek már tárolják
@@ -37,10 +39,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         //A waterVolume (maximum)-ból ki szeretném vonni a textview (volumeText)-ben megadott értéket
         if let volumeText = self.textview.text, let convertedValue = Int(volumeText) {
             if self.waterVolume != nil {
-                atlag = self.waterVolume
+                alap = self.waterVolume
                 self.waterVolume! -= convertedValue
             }
-            conv.text = String(self.waterVolume!)
+            //conv.text = String(self.waterVolume!)
+            lab = Int(conv.text!)
+            if lab != nil && alap != nil{
+                atlag = lab! / alap! * 100
+                
+        }
+            
         }
         
     }
