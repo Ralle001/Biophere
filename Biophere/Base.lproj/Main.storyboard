@@ -18,6 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="4Ha-3T-SUA">
+                                <rect key="frame" x="0.0" y="-12" width="320" height="568"/>
+                            </scrollView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic5" translatesAutoresizingMaskIntoConstraints="NO" id="Eop-CV-UyQ">
                                 <rect key="frame" x="0.0" y="18" width="320" height="506"/>
                             </imageView>
@@ -64,7 +67,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                 <connections>
-                                    <action selector="pass:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="qqf-PT-1Fi"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="wXs-Eo-YeK"/>
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luq-q2-Eif">
@@ -121,7 +124,11 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration" identifier="nextView"/>
                         <constraints>
+                            <constraint firstItem="4Ha-3T-SUA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LlC-Lr-Fxs"/>
+                            <constraint firstItem="4Ha-3T-SUA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="M3v-CM-Bmc"/>
+                            <constraint firstItem="4Ha-3T-SUA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QTZ-oa-X1q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Eop-CV-UyQ" secondAttribute="trailing" id="aW4-0F-8fl"/>
+                            <constraint firstItem="4Ha-3T-SUA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="evh-GN-kwj"/>
                             <constraint firstItem="Eop-CV-UyQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hUm-lh-BaD"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Eop-CV-UyQ" secondAttribute="bottom" id="m86-mY-zOy"/>
                         </constraints>

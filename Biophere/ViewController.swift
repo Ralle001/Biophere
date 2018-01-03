@@ -13,6 +13,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var textview: UITextField!
     @IBOutlet weak var conv: UILabel!
     var volumeText: Int? = nil
+    var atlag: Int? = nil
     
     // Teljsen felesleges duplán tárolni ezeket a szövegeket, az UI komponensek már tárolják
     var waterVolume: Int? = nil // Csupán az aktuális átváltott értéket érdemes tárolni, de talán még ezt sem
@@ -30,20 +31,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textview.resignFirstResponder()
-        return true
-    }
     
     @IBAction func saveButton(_ sender: Any) {
         // Ha az értéket csak a gomb lenyomása után szeretnénk kiszámolni akkor felesleges a fentebbi pass függvény
         //A waterVolume (maximum)-ból ki szeretném vonni a textview (volumeText)-ben megadott értéket
         if let volumeText = self.textview.text, let convertedValue = Int(volumeText) {
             if self.waterVolume != nil {
+                atlag = self.waterVolume
                 self.waterVolume! -= convertedValue
             }
             conv.text = String(self.waterVolume!)
@@ -54,5 +48,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textview.resignFirstResponder()
+        
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
