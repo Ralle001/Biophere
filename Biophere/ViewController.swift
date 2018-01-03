@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     var volumeText: Int? = nil
     var alap: Int? = nil
     var lab: Int? = nil
-    var atlag: Int? = nil
+    var szazalek: Int? = nil
     
     // Teljsen felesleges duplán tárolni ezeket a szövegeket, az UI komponensek már tárolják
     var waterVolume: Int? = nil // Csupán az aktuális átváltott értéket érdemes tárolni, de talán még ezt sem
@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
             //conv.text = String(self.waterVolume!)
             lab = Int(conv.text!)
             if lab != nil && alap != nil{
-                atlag = lab! / alap! * 100
+                szazalek = lab! / alap! * 100
                 
         }
             
