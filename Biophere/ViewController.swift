@@ -42,7 +42,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 alap = self.waterVolume
                 self.waterVolume! -= convertedValue
             }
-            //conv.text = String(self.waterVolume!)
+            conv.text = String(self.waterVolume!)
             lab = Int(conv.text!)
             if lab != nil && alap != nil{
                 szazalek = lab! / alap! * 100
