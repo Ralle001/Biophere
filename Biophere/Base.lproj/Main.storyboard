@@ -66,6 +66,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                                 <connections>
+                                    <action selector="waterUsageChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="dS5-0Z-R9R"/>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="wXs-Eo-YeK"/>
                                 </connections>
                             </textField>
@@ -140,8 +141,8 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="conv" destination="bAA-ca-yaW" id="jso-1m-HBI"/>
-                        <outlet property="label" destination="cvN-p2-cEc" id="qBR-gk-IQJ"/>
-                        <outlet property="textview" destination="ojp-cg-FmI" id="KPT-Lo-DJ5"/>
+                        <outlet property="maxWaterVolumeLabel" destination="cvN-p2-cEc" id="WTe-uZ-vuQ"/>
+                        <outlet property="waterUsageTextview" destination="ojp-cg-FmI" id="eIi-dM-9F2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -165,7 +166,7 @@
                                 <color key="barTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <items>
                                     <navigationItem id="EVj-0Z-ERi">
-                                        <barButtonItem key="leftBarButtonItem" title="Clear" id="zna-ml-Hc8">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="zna-ml-Hc8">
                                             <connections>
                                                 <segue destination="BYZ-38-t0r" kind="popoverPresentation" popoverAnchorBarButtonItem="zna-ml-Hc8" id="c40-Tl-VY9">
                                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
@@ -188,13 +189,16 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Vw-6S-j1N" userLabel="intxt">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4Vw-6S-j1N" userLabel="intxt">
                                 <rect key="frame" x="112" y="125" width="97" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <accessibility key="accessibilityConfiguration" identifier="be"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numberPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="cc-number"/>
+                                <connections>
+                                    <action selector="onLoadedWaterTextFieldEdit:" destination="C3A-wq-ZHA" eventType="editingChanged" id="Irm-Vf-5YG"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="liter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GjQ-q8-Xng">
                                 <rect key="frame" x="217" y="130" width="42" height="21"/>
@@ -213,7 +217,7 @@
                         <viewLayoutGuide key="safeArea" id="AgR-lP-8kN"/>
                     </view>
                     <connections>
-                        <outlet property="intxt" destination="4Vw-6S-j1N" id="OCO-4N-gEW"/>
+                        <outlet property="loadedWaterTextField" destination="4Vw-6S-j1N" id="jhr-Zu-0KM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hO7-0S-wmu" userLabel="First Responder" sceneMemberID="firstResponder"/>

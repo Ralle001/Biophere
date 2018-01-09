@@ -9,47 +9,60 @@ import UIKit
 
 class ViewController: UIViewController, UITextFieldDelegate {
     
-    @IBOutlet weak var label: UILabel!
-    @IBOutlet weak var textview: UITextField!
+    @IBOutlet weak var maxWaterVolumeLabel: UILabel!
+    @IBOutlet weak var waterUsageTextview: UITextField!
     @IBOutlet weak var conv: UILabel!
-    var volumeText: Int? = nil
-    var alap: Float? = nil
     
-    // Teljsen felesleges duplán tárolni ezeket a szövegeket, az UI komponensek már tárolják
-    var waterVolume: Int? = nil // Csupán az aktuális átváltott értéket érdemes tárolni, de talán még ezt sem
-    // mivel nagyon olcsó újraszámitani
+    private var _maxWaterLevel: Int?
+    private var _gestureRecognizer: UITapGestureRecognizer?
+    
+    var maxWaterLevel: Int? {
+        get {
+            return _maxWaterLevel
+        }
+        
+        set(newValue) {
+            _maxWaterLevel = newValue
+            recalculate()
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.recalculate()
+        waterUsageTextview.delegate = self
         
-        textview.delegate = self
-        if let watervolume = waterVolume {
-            label.text = String(watervolume)
-        } else {
-            label.text = ""
+        _gestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissKeyboard))
+        if let gestureRecognizer = _gestureRecognizer {
+            self.view.addGestureRecognizer(gestureRecognizer)
         }
-        
     }
     
-    
-    @IBAction func saveButton(_ sender: Any) {
-        // Ha az értéket csak a gomb lenyomása után szeretnénk kiszámolni akkor felesleges a fentebbi pass függvény
-        //A waterVolume (maximum)-ból ki szeretném vonni a textview (volumeText)-ben megadott értéket
-        if let volumeText = self.textview.text, let convertedValue = Int(volumeText) {
-            if self.waterVolume != nil {
-                alap = Float(self.waterVolume!)
-                self.waterVolume! -= convertedValue
+    private func recalculate() {
+        if let maxwaterlevel = self._maxWaterLevel {
+            if let maxWaterVolumeLabel = self.maxWaterVolumeLabel {
+                maxWaterVolumeLabel.text = String(maxwaterlevel)
             }
-            let lab = Float(conv.text!)
-            conv.text = String(self.waterVolume!)
-            if lab != nil && alap != nil{
-                var szazalek: Float = 0.0
-                szazalek = lab! / alap! * 100
-                conv.text = String(szazalek)
         }
-            
+    }
+    
+    @IBAction func waterUsageChanged(_ sender: Any) {
+        // A waterVolume (maximum)-ból ki szeretném vonni a textview (volumeText)-ben megadott értéket
+        if let maxWatervolumetext = maxWaterVolumeLabel.text,
+            let maxWatervolume = Float(maxWatervolumetext),
+            let waterusagetext = waterUsageTextview.text,
+            let waterUsage = Float(waterusagetext) {
+            // vizkülönbség:
+            let waterDifference = maxWatervolume - waterUsage
+            conv.text = String(waterDifference)
+            // százalékosan:
+            let precentageDifference = waterDifference / maxWatervolume
+            print(precentageDifference) // mehet labelbe
         }
-        
+    }
+    
+    @objc private func dismissKeyboard() {
+        waterUsageTextview.endEditing(true)
     }
     
     override func didReceiveMemoryWarning() {
@@ -58,12 +71,19 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textview.resignFirstResponder()
-        
+        waterUsageTextview.resignFirstResponder()
         return true
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? SettingsViewController {
+            if let maxWaterLevel = self._maxWaterLevel {
+                viewController.loadedWater = maxWaterLevel
+            }
+        }
     }
 }
