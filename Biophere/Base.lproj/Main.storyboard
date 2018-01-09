@@ -18,12 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="háttérkép" translatesAutoresizingMaskIntoConstraints="NO" id="Eop-CV-UyQ">
+                                <rect key="frame" x="0.0" y="62" width="320" height="506"/>
+                            </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="4Ha-3T-SUA">
                                 <rect key="frame" x="0.0" y="-12" width="320" height="568"/>
                             </scrollView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pic5" translatesAutoresizingMaskIntoConstraints="NO" id="Eop-CV-UyQ">
-                                <rect key="frame" x="0.0" y="18" width="320" height="506"/>
-                            </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4b-aH-AwN">
                                 <rect key="frame" x="0.0" y="18" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -52,9 +52,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfU-ul-82S" userLabel="ha">
-                                <rect key="frame" x="28" y="149" width="181" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FfU-ul-82S" userLabel="ha">
+                                <rect key="frame" x="28" y="271" width="181" height="0.0"/>
                                 <accessibility key="accessibilityConfiguration" identifier="ha"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -73,7 +72,9 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luq-q2-Eif">
                                 <rect key="frame" x="220" y="494" width="58" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Save"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" red="0.52032705786315414" green="0.58598217680505671" blue="0.9568536436001871" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="saveButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dHg-CO-QNO"/>
                                 </connections>
@@ -82,14 +83,14 @@
                                 <rect key="frame" x="148" y="499" width="42" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.9568536436001871" green="0.95302606893518027" blue="0.14413382975460914" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Felhasznált vízmennyiség:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjg-wi-Kpc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Water usage" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjg-wi-Kpc">
                                 <rect key="frame" x="43" y="465" width="235" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.26606260886789235" green="1" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Maradék: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntl-Tb-R0A">
@@ -126,6 +127,7 @@
                         <constraints>
                             <constraint firstItem="4Ha-3T-SUA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LlC-Lr-Fxs"/>
                             <constraint firstItem="4Ha-3T-SUA" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="M3v-CM-Bmc"/>
+                            <constraint firstItem="Eop-CV-UyQ" firstAttribute="top" secondItem="FfU-ul-82S" secondAttribute="bottom" id="QLd-87-7HN"/>
                             <constraint firstItem="4Ha-3T-SUA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QTZ-oa-X1q"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Eop-CV-UyQ" secondAttribute="trailing" id="aW4-0F-8fl"/>
                             <constraint firstItem="4Ha-3T-SUA" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="evh-GN-kwj"/>
@@ -154,8 +156,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AMK-d5-Cok">
-                                <rect key="frame" x="0.0" y="62" width="320" height="506"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="iTunesArtwork" translatesAutoresizingMaskIntoConstraints="NO" id="AMK-d5-Cok">
+                                <rect key="frame" x="0.0" y="56" width="320" height="512"/>
                             </imageView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NKv-0I-j0S">
                                 <rect key="frame" x="0.0" y="18" width="320" height="44"/>
@@ -179,7 +181,7 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Add meg a felhasználható vízmennyiséget" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="s82-mz-KWz">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" text="Give the used water count" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="s82-mz-KWz">
                                 <rect key="frame" x="16" y="83" width="288" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -220,7 +222,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="pic5" width="320" height="506"/>
+        <image name="háttérkép" width="160" height="253"/>
+        <image name="iTunesArtwork" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="MDP-H5-uw0"/>

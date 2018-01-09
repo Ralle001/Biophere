@@ -10,7 +10,6 @@
 		DC127E351F9C6544000740A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E341F9C6544000740A9 /* AppDelegate.swift */; };
 		DC127E371F9C6544000740A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E361F9C6544000740A9 /* ViewController.swift */; };
 		DC127E3A1F9C6544000740A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC127E381F9C6544000740A9 /* Main.storyboard */; };
-		DC127E3C1F9C6544000740A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC127E3B1F9C6544000740A9 /* Assets.xcassets */; };
 		DC127E3F1F9C6544000740A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC127E3D1F9C6544000740A9 /* LaunchScreen.storyboard */; };
 		DC127E4A1F9C6544000740A9 /* BiophereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E491F9C6544000740A9 /* BiophereTests.swift */; };
 		DC127E551F9C6544000740A9 /* BiophereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E541F9C6544000740A9 /* BiophereUITests.swift */; };
@@ -39,7 +38,6 @@
 		DC127E341F9C6544000740A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DC127E361F9C6544000740A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC127E391F9C6544000740A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		DC127E3B1F9C6544000740A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC127E3E1F9C6544000740A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DC127E401F9C6544000740A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC127E451F9C6544000740A9 /* BiophereTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiophereTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,6 +48,7 @@
 		DC127E561F9C6544000740A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC127E621F9C6575000740A9 /* Biophere.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Biophere.entitlements; sourceTree = "<group>"; };
 		DC4202DE1FB05B8600C19566 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		DC4D60F22004BC9B00B46AC1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = /Users/coder/Desktop/Biophere/Biophere/Media.xcassets; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +99,12 @@
 		DC127E331F9C6544000740A9 /* Biophere */ = {
 			isa = PBXGroup;
 			children = (
+				DC4D60F22004BC9B00B46AC1 /* Media.xcassets */,
 				DC127E621F9C6575000740A9 /* Biophere.entitlements */,
 				DC127E341F9C6544000740A9 /* AppDelegate.swift */,
 				DC127E361F9C6544000740A9 /* ViewController.swift */,
 				DC4202DE1FB05B8600C19566 /* SettingsViewController.swift */,
 				DC127E381F9C6544000740A9 /* Main.storyboard */,
-				DC127E3B1F9C6544000740A9 /* Assets.xcassets */,
 				DC127E3D1F9C6544000740A9 /* LaunchScreen.storyboard */,
 				DC127E401F9C6544000740A9 /* Info.plist */,
 			);
@@ -246,7 +245,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC127E3F1F9C6544000740A9 /* LaunchScreen.storyboard in Resources */,
-				DC127E3C1F9C6544000740A9 /* Assets.xcassets in Resources */,
 				DC127E3A1F9C6544000740A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
