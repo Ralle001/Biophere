@@ -43,7 +43,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let lab = Float(conv.text!)
             //conv.text = String(self.waterVolume!)
             if lab != nil && alap != nil{
-                let szazalek = lab! / alap! * 100
+                var szazalek: Float = 0.0
+                szazalek = lab! / alap! * 100
                 conv.text = String(szazalek)
         }
             
