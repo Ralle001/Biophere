@@ -14,7 +14,7 @@
 		DC127E4A1F9C6544000740A9 /* BiophereTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E491F9C6544000740A9 /* BiophereTests.swift */; };
 		DC127E551F9C6544000740A9 /* BiophereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E541F9C6544000740A9 /* BiophereUITests.swift */; };
 		DC4202DF1FB05B8600C19566 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4202DE1FB05B8600C19566 /* SettingsViewController.swift */; };
-		F79B615D20056EA900A6D1B8 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4D60F22004BC9B00B46AC1 /* Media.xcassets */; };
+		DC4D60F6200722BD00B46AC1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4D60F5200722BD00B46AC1 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 		DC127E561F9C6544000740A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DC127E621F9C6575000740A9 /* Biophere.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Biophere.entitlements; sourceTree = "<group>"; };
 		DC4202DE1FB05B8600C19566 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		DC4D60F22004BC9B00B46AC1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = /Users/istvanfe/Documents/Projects/Biophere/Biophere/Media.xcassets; sourceTree = "<absolute>"; };
+		DC4D60F5200722BD00B46AC1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +80,7 @@
 		DC127E281F9C6544000740A9 = {
 			isa = PBXGroup;
 			children = (
+				DC4D60F5200722BD00B46AC1 /* Media.xcassets */,
 				DC127E331F9C6544000740A9 /* Biophere */,
 				DC127E481F9C6544000740A9 /* BiophereTests */,
 				DC127E531F9C6544000740A9 /* BiophereUITests */,
@@ -100,7 +101,6 @@
 		DC127E331F9C6544000740A9 /* Biophere */ = {
 			isa = PBXGroup;
 			children = (
-				DC4D60F22004BC9B00B46AC1 /* Media.xcassets */,
 				DC127E621F9C6575000740A9 /* Biophere.entitlements */,
 				DC127E341F9C6544000740A9 /* AppDelegate.swift */,
 				DC127E361F9C6544000740A9 /* ViewController.swift */,
@@ -246,7 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC127E3F1F9C6544000740A9 /* LaunchScreen.storyboard in Resources */,
-				F79B615D20056EA900A6D1B8 /* Media.xcassets in Resources */,
+				DC4D60F6200722BD00B46AC1 /* Media.xcassets in Resources */,
 				DC127E3A1F9C6544000740A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,7 +444,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JMBH8HALZ;
 				INFOPLIST_FILE = Biophere/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.Biophere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -461,7 +461,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JMBH8HALZ;
 				INFOPLIST_FILE = Biophere/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.Biophere;
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -12,6 +12,7 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var maxWaterVolumeLabel: UILabel!
     @IBOutlet weak var waterUsageTextview: UITextField!
     @IBOutlet weak var conv: UILabel!
+    var precentageDifference: Float? = nil
     
     private var _maxWaterLevel: Int?
     private var _gestureRecognizer: UITapGestureRecognizer?
@@ -56,8 +57,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
             let waterDifference = maxWatervolume - waterUsage
             conv.text = String(waterDifference)
             // százalékosan:
-            let precentageDifference = waterDifference / maxWatervolume
+            let precentageDifference = waterDifference / maxWatervolume * 100
             print(precentageDifference) // mehet labelbe
+        }
+    }
+    
+    @IBAction func Calc(_ sender: Any) {
+        if precentageDifference != nil && precentageDifference! > 90.0 && precentageDifference! <= 100.0 {
+            
         }
     }
     
