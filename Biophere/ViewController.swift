@@ -66,6 +66,46 @@ class ViewController: UIViewController, UITextFieldDelegate {
         if precentageDifference != nil && precentageDifference! > 90.0 && precentageDifference! <= 100.0 {
             
         }
+        
+        if precentageDifference != nil && precentageDifference! > 80.0 && precentageDifference! <= 90.0 {
+            
+        }
+        
+        if precentageDifference != nil && precentageDifference! > 70.0 && precentageDifference! <= 80.0 {
+            
+        }
+        
+        if precentageDifference != nil && precentageDifference! > 60.0 && precentageDifference! <= 70.0 {
+            
+        }
+        
+        if precentageDifference != nil && precentageDifference! > 50.0 && precentageDifference! <= 60.0 {
+            
+        }
+        
+        if precentageDifference != nil && precentageDifference! > 40.0 && precentageDifference! <= 50.0 {
+            
+        }
+        
+        if precentageDifference != nil && precentageDifference! > 30.0 && precentageDifference! <= 40.0 {
+            
+        }
+        
+        if precentageDifference != nil && precentageDifference! > 20.0 && precentageDifference! <= 30.0 {
+            
+        }
+        
+        if precentageDifference != nil && precentageDifference! > 10.0 && precentageDifference! <= 20.0 {
+            
+        }
+        
+        if precentageDifference != nil && precentageDifference! > 0.0 && precentageDifference! <= 10.0 {
+            
+        }
+        
+        if precentageDifference != nil && precentageDifference! == 0.0 {
+            
+        }
     }
     
     @objc private func dismissKeyboard() {
