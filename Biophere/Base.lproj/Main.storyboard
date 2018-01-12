@@ -141,6 +141,7 @@
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="conv" destination="bAA-ca-yaW" id="jso-1m-HBI"/>
+                        <outlet property="imageView" destination="Eop-CV-UyQ" id="rgv-uT-UOu"/>
                         <outlet property="maxWaterVolumeLabel" destination="cvN-p2-cEc" id="WTe-uZ-vuQ"/>
                         <outlet property="waterUsageTextview" destination="ojp-cg-FmI" id="eIi-dM-9F2"/>
                     </connections>

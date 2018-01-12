@@ -12,10 +12,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var maxWaterVolumeLabel: UILabel!
     @IBOutlet weak var waterUsageTextview: UITextField!
     @IBOutlet weak var conv: UILabel!
+    @IBOutlet var imageView: UIImageView!
+    
     var precentageDifference: Float? = nil
+    var percentage: Float = 0.0
     
     private var _maxWaterLevel: Int?
     private var _gestureRecognizer: UITapGestureRecognizer?
+    
+    var location = CGPoint(x: 0, y: 0)
     
     var maxWaterLevel: Int? {
         get {
@@ -59,52 +64,55 @@ class ViewController: UIViewController, UITextFieldDelegate {
             // százalékosan:
             let precentageDifference = waterDifference / maxWatervolume * 100
             print(precentageDifference) // mehet labelbe
+            percentage = precentageDifference
         }
     }
     
     @IBAction func Calc(_ sender: Any) {
-        if precentageDifference != nil && precentageDifference! > 90.0 && precentageDifference! <= 100.0 {
+        
+        
+        if percentage != 0.0 && percentage > 90.0 && percentage <= 100.0 {
             
         }
         
-        if precentageDifference != nil && precentageDifference! > 80.0 && precentageDifference! <= 90.0 {
+        else if percentage != 0.0 && percentage > 80.0 && percentage <= 90.0 {
             
         }
         
-        if precentageDifference != nil && precentageDifference! > 70.0 && precentageDifference! <= 80.0 {
+        else if percentage != 0.0 && percentage > 70.0 && percentage <= 80.0 {
             
         }
         
-        if precentageDifference != nil && precentageDifference! > 60.0 && precentageDifference! <= 70.0 {
+        else if percentage != 0.0 && percentage > 60.0 && percentage <= 70.0 {
             
         }
         
-        if precentageDifference != nil && precentageDifference! > 50.0 && precentageDifference! <= 60.0 {
+        else if percentage != 0.0 && percentage > 50.0 && percentage <= 60.0 {
             
         }
         
-        if precentageDifference != nil && precentageDifference! > 40.0 && precentageDifference! <= 50.0 {
+        else if percentage != 0.0 && percentage > 40.0 && percentage <= 50.0 {
             
         }
         
-        if precentageDifference != nil && precentageDifference! > 30.0 && precentageDifference! <= 40.0 {
+        else if percentage != 0.0 && percentage > 30.0 && percentage <= 40.0 {
             
         }
         
-        if precentageDifference != nil && precentageDifference! > 20.0 && precentageDifference! <= 30.0 {
+        else if percentage != 0.0 && percentage > 20.0 && percentage <= 30.0 {
             
         }
         
-        if precentageDifference != nil && precentageDifference! > 10.0 && precentageDifference! <= 20.0 {
+        else if percentage != 0.0 && percentage > 10.0 && percentage <= 20.0 {
             
         }
         
-        if precentageDifference != nil && precentageDifference! > 0.0 && precentageDifference! <= 10.0 {
+        else if percentage != 0.0 && percentage > 0.0 && percentage <= 10.0 {
             
         }
         
-        if precentageDifference != nil && precentageDifference! == 0.0 {
-            
+        else if percentage != 0.0 && percentage == 0.0 {
+            imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
     }
     
