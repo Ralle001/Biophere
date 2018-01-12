@@ -72,47 +72,48 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         
         if percentage != 0.0 && percentage > 90.0 && percentage <= 100.0 {
-            imageView.frame.origin = CGPoint(x: 0, y: 0)
+            imageView.frame.origin = CGPoint(x: 0, y: 80)
         }
         
         else if percentage != 0.0 && percentage > 80.0 && percentage <= 90.0 {
-            imageView.frame.origin = CGPoint(x: 0, y: 0)
+            imageView.frame.origin = CGPoint(x: 0, y: 113.6)
         }
         
         else if percentage != 0.0 && percentage > 70.0 && percentage <= 80.0 {
-            imageView.frame.origin = CGPoint(x: 0, y: 0)
+            imageView.frame.origin = CGPoint(x: 0, y: 170.4)
         }
         
         else if percentage != 0.0 && percentage > 60.0 && percentage <= 70.0 {
-            imageView.frame.origin = CGPoint(x: 0, y: 0)
+            imageView.frame.origin = CGPoint(x: 0, y: 227.2)
         }
         
         else if percentage != 0.0 && percentage > 50.0 && percentage <= 60.0 {
-            imageView.frame.origin = CGPoint(x: 0, y: 0)
+            imageView.frame.origin = CGPoint(x: 0, y: 284)
         }
         
         else if percentage != 0.0 && percentage > 40.0 && percentage <= 50.0 {
-            imageView.frame.origin = CGPoint(x: 0, y: 0)
+            imageView.frame.origin = CGPoint(x: 0, y: 340.8)
         }
         
         else if percentage != 0.0 && percentage > 30.0 && percentage <= 40.0 {
-            imageView.frame.origin = CGPoint(x: 0, y: 0)
+            imageView.frame.origin = CGPoint(x: 0, y: 397.6)
         }
         
         else if percentage != 0.0 && percentage > 20.0 && percentage <= 30.0 {
-            imageView.frame.origin = CGPoint(x: 0, y: 0)
+            imageView.frame.origin = CGPoint(x: 0, y: 454.4)
         }
         
         else if percentage != 0.0 && percentage > 10.0 && percentage <= 20.0 {
-            imageView.frame.origin = CGPoint(x: 0, y: 0)
+            imageView.frame.origin = CGPoint(x: 0, y: 511.2)
         }
         
         else if percentage != 0.0 && percentage > 0.0 && percentage <= 10.0 {
             imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
         
-        else if percentage == 0.0 {
-            imageView.frame.origin = CGPoint(x: 0, y: 1200)
+        else {
+            imageView.frame.origin = CGPoint(x: 0, y: 568)
+            createAlert(title: "Water Usage", message: "You have reached your water usage limit :(")
         }
     }
     
@@ -128,6 +129,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         waterUsageTextview.resignFirstResponder()
         return true
+    }
+    
+    func createAlert (title:String, message:String)
+    {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: { (action) in alert.dismiss(animated: true, completion: nil)}))
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
