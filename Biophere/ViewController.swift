@@ -72,47 +72,47 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         
         if percentage != 0.0 && percentage > 90.0 && percentage <= 100.0 {
-            
+            imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
         
         else if percentage != 0.0 && percentage > 80.0 && percentage <= 90.0 {
-            
+            imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
         
         else if percentage != 0.0 && percentage > 70.0 && percentage <= 80.0 {
-            
+            imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
         
         else if percentage != 0.0 && percentage > 60.0 && percentage <= 70.0 {
-            
+            imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
         
         else if percentage != 0.0 && percentage > 50.0 && percentage <= 60.0 {
-            
+            imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
         
         else if percentage != 0.0 && percentage > 40.0 && percentage <= 50.0 {
-            
+            imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
         
         else if percentage != 0.0 && percentage > 30.0 && percentage <= 40.0 {
-            
+            imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
         
         else if percentage != 0.0 && percentage > 20.0 && percentage <= 30.0 {
-            
+            imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
         
         else if percentage != 0.0 && percentage > 10.0 && percentage <= 20.0 {
-            
+            imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
         
         else if percentage != 0.0 && percentage > 0.0 && percentage <= 10.0 {
-            
+            imageView.frame.origin = CGPoint(x: 0, y: 0)
         }
         
-        else if percentage != 0.0 && percentage == 0.0 {
-            imageView.frame.origin = CGPoint(x: 0, y: 0)
+        else if percentage == 0.0 {
+            imageView.frame.origin = CGPoint(x: 0, y: 1200)
         }
     }
     

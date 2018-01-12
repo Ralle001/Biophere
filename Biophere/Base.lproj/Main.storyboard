@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="62" width="320" height="506"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="4Ha-3T-SUA">
-                                <rect key="frame" x="0.0" y="-10" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="18" width="320" height="540"/>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O4b-aH-AwN">
                                 <rect key="frame" x="0.0" y="18" width="320" height="44"/>
@@ -123,7 +123,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <accessibility key="accessibilityConfiguration" identifier="nextView"/>
                         <constraints>
                             <constraint firstItem="4Ha-3T-SUA" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="LlC-Lr-Fxs"/>
