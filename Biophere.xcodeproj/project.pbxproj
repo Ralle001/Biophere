@@ -15,6 +15,7 @@
 		DC127E551F9C6544000740A9 /* BiophereUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC127E541F9C6544000740A9 /* BiophereUITests.swift */; };
 		DC4202DF1FB05B8600C19566 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC4202DE1FB05B8600C19566 /* SettingsViewController.swift */; };
 		DC4D60F6200722BD00B46AC1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC4D60F5200722BD00B46AC1 /* Media.xcassets */; };
+		DCE7157D20F4907D0009919F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE7157C20F4907D0009919F /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		DC127E621F9C6575000740A9 /* Biophere.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Biophere.entitlements; sourceTree = "<group>"; };
 		DC4202DE1FB05B8600C19566 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		DC4D60F5200722BD00B46AC1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		DCE7157C20F4907D0009919F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Media.xcassets; path = ../../../../../Documents/Biophere/Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				DC4202DE1FB05B8600C19566 /* SettingsViewController.swift */,
 				DC127E381F9C6544000740A9 /* Main.storyboard */,
 				DC127E3D1F9C6544000740A9 /* LaunchScreen.storyboard */,
+				DCE7157C20F4907D0009919F /* Media.xcassets */,
 				DC127E401F9C6544000740A9 /* Info.plist */,
 			);
 			path = Biophere;
@@ -193,7 +196,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Pliz Help";
 				TargetAttributes = {
 					DC127E301F9C6544000740A9 = {
@@ -247,6 +250,7 @@
 			files = (
 				DC127E3F1F9C6544000740A9 /* LaunchScreen.storyboard in Resources */,
 				DC4D60F6200722BD00B46AC1 /* Media.xcassets in Resources */,
+				DCE7157D20F4907D0009919F /* Media.xcassets in Resources */,
 				DC127E3A1F9C6544000740A9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +347,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -350,6 +355,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -400,6 +406,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -407,6 +414,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -440,13 +448,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Biophere/Biophere.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JMBH8HALZ;
 				INFOPLIST_FILE = Biophere/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.Biophere;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donattreszler.biophere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -457,13 +466,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = Biophere/Biophere.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3JMBH8HALZ;
 				INFOPLIST_FILE = Biophere/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.plizhelp.Biophere;
+				PRODUCT_BUNDLE_IDENTIFIER = com.donattreszler.biophere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
